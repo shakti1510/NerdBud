@@ -13,6 +13,95 @@
         "question": "Which loop is used to iterate over a sequence?",
         "options": ["if", "while", "for", "def"],   
         "answer": "for"
+      },
+      {
+        "id": 3,
+        "topic": "conditional statements",
+        "question": "Which conditional statement is used to check if a value is equal to another value?",
+        "options": ["if", "while", "for", "def"],
+        "answer": "if"
+      },
+      {
+        "id": 4,
+        "topic": "OOPS",
+        "question": "What is the purpose of the 'self' keyword in Python?",
+        "options": ["to refer to the current class instance", "to refer to the parent class instance", "to refer to the child class instance", "to refer to the class name"],   
+        "answer": "to refer to the current class instance"
+      },
+      {
+        "id": 5,
+        "topic": "OOPS",
+        "question": "What is the purpose of the 'self' keyword in Python?",
+        "options": ["to refer to the current class instance", "to refer to the parent class instance", "to refer to the child class instance", "to refer to the class name"],   
+        "answer": "to refer to the current class instance"
+      },
+      {
+        "id": 6,
+        "topic": "Functions",
+        "question": "What is the purpose of the 'def' keyword in Python?",
+        "options": ["to define a function", "to define a class", "to define a variable", "to define a loop"],   
+        "answer": "to define a function"
+      },
+      {
+        "id": 7,
+        "topic": "Functions",
+        "question": "What is the purpose of the 'def' keyword in Python?",
+        "options": ["to define a function", "to define a class", "to define a variable", "to define a loop"],   
+        "answer": "to define a function"
+      },
+      {
+        "id": 8,
+        "topic": "Functions",
+        "question": "What is the purpose of the 'def' keyword in Python?",
+        "options": ["to define a function", "to define a class", "to define a variable", "to define a loop"],   
+        "answer": "to define a function"
+      },
+      {
+        "id": 9,
+        "topic": "Lists",
+        "question": "What is the purpose of the 'list' keyword in Python?",
+        "options": ["to define a list", "to define a class", "to define a variable", "to define a loop"],   
+        "answer": "to define a list"
+      },
+      {
+        "id": 10,
+        "topic": "Lists",
+        "question": "What is the purpose of the 'list' keyword in Python?",
+        "options": ["to define a list", "to define a class", "to define a variable", "to define a loop"],   
+        "answer": "to define a list"
+      }
+    ],
+    "Intermediate": [
+      {
+        "id": 1,
+        "topic": "Data Structures",
+        "question": "What is the purpose of the 'dict' keyword in Python?",
+        "options": ["to define a dictionary", "to define a class", "to define a variable", "to define a loop"],   
+        "answer": "to define a dictionary"
+      },
+      {
+        "id": 2,
+        "topic": "Data Structures",
+        "question": "What is the purpose of the 'dict' keyword in Python?",
+        "options": ["to define a dictionary", "to define a class", "to define a variable", "to define a loop"],   
+        "answer": "to define a dictionary"
+      }
+
+    ],
+    "Advanced": [
+      {
+        "id": 1,
+        "topic": "Lists",
+        "question": "What is the purpose of the 'list' keyword in Python?",
+        "options": ["to define a list", "to define a class", "to define a variable", "to define a loop"],   
+        "answer": "to define a list"
+      },
+      {
+        "id": 2,
+        "topic": "Objects",
+        "question": "What is the purpose of the 'object' keyword in Python?",
+        "options": ["to define an object", "to define a class", "to define a variable", "to define a loop"],   
+        "answer": "to define an object"
       }
     ]
   }
