@@ -176,14 +176,3 @@ The trained model is included in the repository for runtime inference.
 This project is open-source and available under the MIT License.
 
 ````
-
----
-
-### ✅ What to Do Next
-1. Paste this into `README.md`
-2. Commit it:
-```bash
-git add README.md
-git commit -m "Add finalized README documentation"
-git push origin master
-````
