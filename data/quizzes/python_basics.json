@@ -1,0 +1,19 @@
+{
+    "Beginner": [
+      {
+        "id": 1,
+        "topic": "variables",
+        "question": "Which of the following is a valid Python variable name?",
+        "options": ["1value", "value_1", "value-1", "def"],
+        "answer": "value_1"
+      },
+      {
+        "id": 2,
+        "topic": "loops",
+        "question": "Which loop is used to iterate over a sequence?",
+        "options": ["if", "while", "for", "def"],   
+        "answer": "for"
+      }
+    ]
+  }
+  
