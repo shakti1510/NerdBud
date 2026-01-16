@@ -1,6 +1,11 @@
+streanlit
+plotly
 pandas
 numpy
 ipywidgets
 scikit-learn
-torch
 matplotlib
+joblib
+matplotlib
+
+
