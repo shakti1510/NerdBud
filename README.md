@@ -174,5 +174,3 @@ The trained model is included in the repository for runtime inference.
 ## 📜 License
 
 This project is open-source and available under the MIT License.
-
-````
