@@ -1,108 +1,484 @@
 {
-    "Beginner": [
-      {
-        "id": 1,
-        "topic": "variables",
-        "question": "Which of the following is a valid Python variable name?",
-        "options": ["1value", "value_1", "value-1", "def"],
-        "answer": "value_1"
-      },
-      {
-        "id": 2,
-        "topic": "loops",
-        "question": "Which loop is used to iterate over a sequence?",
-        "options": ["if", "while", "for", "def"],   
-        "answer": "for"
-      },
-      {
-        "id": 3,
-        "topic": "conditional statements",
-        "question": "Which conditional statement is used to check if a value is equal to another value?",
-        "options": ["if", "while", "for", "def"],
-        "answer": "if"
-      },
-      {
-        "id": 4,
-        "topic": "OOPS",
-        "question": "What is the purpose of the 'self' keyword in Python?",
-        "options": ["to refer to the current class instance", "to refer to the parent class instance", "to refer to the child class instance", "to refer to the class name"],   
-        "answer": "to refer to the current class instance"
-      },
-      {
-        "id": 5,
-        "topic": "OOPS",
-        "question": "What is the purpose of the 'self' keyword in Python?",
-        "options": ["to refer to the current class instance", "to refer to the parent class instance", "to refer to the child class instance", "to refer to the class name"],   
-        "answer": "to refer to the current class instance"
-      },
-      {
-        "id": 6,
-        "topic": "Functions",
-        "question": "What is the purpose of the 'def' keyword in Python?",
-        "options": ["to define a function", "to define a class", "to define a variable", "to define a loop"],   
-        "answer": "to define a function"
-      },
-      {
-        "id": 7,
-        "topic": "Functions",
-        "question": "What is the purpose of the 'def' keyword in Python?",
-        "options": ["to define a function", "to define a class", "to define a variable", "to define a loop"],   
-        "answer": "to define a function"
-      },
-      {
-        "id": 8,
-        "topic": "Functions",
-        "question": "What is the purpose of the 'def' keyword in Python?",
-        "options": ["to define a function", "to define a class", "to define a variable", "to define a loop"],   
-        "answer": "to define a function"
-      },
-      {
-        "id": 9,
-        "topic": "Lists",
-        "question": "What is the purpose of the 'list' keyword in Python?",
-        "options": ["to define a list", "to define a class", "to define a variable", "to define a loop"],   
-        "answer": "to define a list"
-      },
-      {
-        "id": 10,
-        "topic": "Lists",
-        "question": "What is the purpose of the 'list' keyword in Python?",
-        "options": ["to define a list", "to define a class", "to define a variable", "to define a loop"],   
-        "answer": "to define a list"
-      }
-    ],
-    "Intermediate": [
-      {
-        "id": 1,
-        "topic": "Data Structures",
-        "question": "What is the purpose of the 'dict' keyword in Python?",
-        "options": ["to define a dictionary", "to define a class", "to define a variable", "to define a loop"],   
-        "answer": "to define a dictionary"
-      },
-      {
-        "id": 2,
-        "topic": "Data Structures",
-        "question": "What is the purpose of the 'dict' keyword in Python?",
-        "options": ["to define a dictionary", "to define a class", "to define a variable", "to define a loop"],   
-        "answer": "to define a dictionary"
-      }
+  "Beginner": [
+    {
+      "question": "What is Python?",
+      "options": ["A snake", "A programming language", "A game", "An operating system"],
+      "answer": "A programming language",
+      "topic": "Basics"
+    },
+    {
+      "question": "Which keyword is used to print output in Python?",
+      "options": ["echo", "print", "display", "show"],
+      "answer": "print",
+      "topic": "Basics"
+    },
+    {
+      "question": "Which symbol is used for comments in Python?",
+      "options": ["//", "#", "/* */", "--"],
+      "answer": "#",
+      "topic": "Basics"
+    },
+    {
+      "question": "What is the correct file extension for Python files?",
+      "options": [".java", ".py", ".python", ".pt"],
+      "answer": ".py",
+      "topic": "Basics"
+    },
+    {
+      "question": "Which function is used to take input from the user?",
+      "options": ["input()", "scan()", "read()", "get()"],
+      "answer": "input()",
+      "topic": "Input Output"
+    },
+    {
+      "question": "Which data type is used to store whole numbers?",
+      "options": ["float", "int", "str", "bool"],
+      "answer": "int",
+      "topic": "Data Types"
+    },
+    {
+      "question": "What will type(10) return?",
+      "options": ["float", "int", "str", "number"],
+      "answer": "int",
+      "topic": "Data Types"
+    },
+    {
+      "question": "Which operator is used for addition?",
+      "options": ["+", "-", "*", "/"],
+      "answer": "+",
+      "topic": "Operators"
+    },
+    {
+      "question": "What is the output of: print(2 * 3)?",
+      "options": ["5", "6", "23", "Error"],
+      "answer": "6",
+      "topic": "Operators"
+    },
+    {
+      "question": "Which data type stores True or False?",
+      "options": ["int", "bool", "str", "float"],
+      "answer": "bool",
+      "topic": "Data Types"
+    },
 
-    ],
-    "Advanced": [
-      {
-        "id": 1,
-        "topic": "Lists",
-        "question": "What is the purpose of the 'list' keyword in Python?",
-        "options": ["to define a list", "to define a class", "to define a variable", "to define a loop"],   
-        "answer": "to define a list"
-      },
-      {
-        "id": 2,
-        "topic": "Objects",
-        "question": "What is the purpose of the 'object' keyword in Python?",
-        "options": ["to define an object", "to define a class", "to define a variable", "to define a loop"],   
-        "answer": "to define an object"
-      }
-    ]
-  }
+    {
+      "question": "Which keyword is used for conditional statements?",
+      "options": ["if", "for", "while", "def"],
+      "answer": "if",
+      "topic": "Conditions"
+    },
+    {
+      "question": "What does len() do?",
+      "options": ["Counts elements", "Adds values", "Deletes data", "Prints output"],
+      "answer": "Counts elements",
+      "topic": "Functions"
+    },
+    {
+      "question": "Which loop runs a fixed number of times?",
+      "options": ["while", "for", "do-while", "repeat"],
+      "answer": "for",
+      "topic": "Loops"
+    },
+    {
+      "question": "Which keyword is used to define a function?",
+      "options": ["func", "def", "define", "function"],
+      "answer": "def",
+      "topic": "Functions"
+    },
+    {
+      "question": "What is a list?",
+      "options": ["Collection of items", "Single value", "Function", "Loop"],
+      "answer": "Collection of items",
+      "topic": "Lists"
+    },
+
+    {
+      "question": "Which brackets are used for lists?",
+      "options": ["()", "{}", "[]", "<>"],
+      "answer": "[]",
+      "topic": "Lists"
+    },
+    {
+      "question": "What is the index of first element in a list?",
+      "options": ["0", "1", "-1", "None"],
+      "answer": "0",
+      "topic": "Lists"
+    },
+    {
+      "question": "Which keyword stops a loop?",
+      "options": ["stop", "break", "exit", "end"],
+      "answer": "break",
+      "topic": "Loops"
+    },
+    {
+      "question": "Which keyword skips the current iteration?",
+      "options": ["skip", "continue", "pass", "next"],
+      "answer": "continue",
+      "topic": "Loops"
+    },
+    {
+      "question": "What does print(type('10')) output?",
+      "options": ["int", "str", "float", "bool"],
+      "answer": "str",
+      "topic": "Data Types"
+    }
+  ],
+  "Intermediate": [
+    {
+      "question": "What is list comprehension used for?",
+      "options": ["Creating lists in one line", "Sorting lists", "Deleting lists", "Printing lists"],
+      "answer": "Creating lists in one line",
+      "topic": "Lists"
+    },
+    {
+      "question": "What does the append() method do?",
+      "options": ["Adds element to list", "Removes element", "Sorts list", "Clears list"],
+      "answer": "Adds element to list",
+      "topic": "Lists"
+    },
+    {
+      "question": "Which method removes the last element of a list?",
+      "options": ["remove()", "pop()", "delete()", "clear()"],
+      "answer": "pop()",
+      "topic": "Lists"
+    },
+    {
+      "question": "What is a tuple?",
+      "options": ["Immutable list", "Mutable list", "Dictionary", "Set"],
+      "answer": "Immutable list",
+      "topic": "Tuples"
+    },
+    {
+      "question": "Which symbol is used to create a dictionary?",
+      "options": ["[]", "()", "{}", "<>"],
+      "answer": "{}",
+      "topic": "Dictionary"
+    },
+    {
+      "question": "What does dict.keys() return?",
+      "options": ["All keys", "All values", "All items", "Nothing"],
+      "answer": "All keys",
+      "topic": "Dictionary"
+    },
+    {
+      "question": "Which loop is best when number of iterations is unknown?",
+      "options": ["for", "while", "do-while", "repeat"],
+      "answer": "while",
+      "topic": "Loops"
+    },
+    {
+      "question": "What does break do?",
+      "options": ["Stops loop", "Skips iteration", "Restarts loop", "Pauses loop"],
+      "answer": "Stops loop",
+      "topic": "Loops"
+    },
+    {
+      "question": "What does continue do?",
+      "options": ["Stops loop", "Skips current iteration", "Ends program", "Does nothing"],
+      "answer": "Skips current iteration",
+      "topic": "Loops"
+    },
+    {
+      "question": "What is a function?",
+      "options": ["Reusable block of code", "Variable", "Loop", "Condition"],
+      "answer": "Reusable block of code",
+      "topic": "Functions"
+    },
+
+    {
+      "question": "Which keyword returns a value from a function?",
+      "options": ["return", "break", "yield", "pass"],
+      "answer": "return",
+      "topic": "Functions"
+    },
+    {
+      "question": "What is default argument?",
+      "options": ["Argument with default value", "Required argument", "Random value", "None"],
+      "answer": "Argument with default value",
+      "topic": "Functions"
+    },
+    {
+      "question": "What is a lambda function?",
+      "options": ["Anonymous function", "Loop", "Class", "Module"],
+      "answer": "Anonymous function",
+      "topic": "Functions"
+    },
+    {
+      "question": "Which keyword handles exceptions?",
+      "options": ["try", "catch", "handle", "error"],
+      "answer": "try",
+      "topic": "Exception Handling"
+    },
+    {
+      "question": "What does except block do?",
+      "options": ["Handles error", "Stops program", "Skips code", "Restarts code"],
+      "answer": "Handles error",
+      "topic": "Exception Handling"
+    },
+    {
+      "question": "What does finally block do?",
+      "options": ["Executes always", "Only on error", "Skips error", "Ends program"],
+      "answer": "Executes always",
+      "topic": "Exception Handling"
+    },
+    {
+      "question": "What is a set?",
+      "options": ["Unordered unique collection", "Ordered list", "Dictionary", "Tuple"],
+      "answer": "Unordered unique collection",
+      "topic": "Sets"
+    },
+    {
+      "question": "Which method adds element to set?",
+      "options": ["add()", "append()", "insert()", "push()"],
+      "answer": "add()",
+      "topic": "Sets"
+    },
+    {
+      "question": "What does len() return?",
+      "options": ["Number of elements", "Last element", "First element", "Index"],
+      "answer": "Number of elements",
+      "topic": "Built-in Functions"
+    },
+    {
+      "question": "What is slicing?",
+      "options": ["Extracting part of sequence", "Deleting sequence", "Sorting", "Looping"],
+      "answer": "Extracting part of sequence",
+      "topic": "Strings & Lists"
+    },
+
+    {
+      "question": "What is map() used for?",
+      "options": ["Apply function to iterable", "Loop", "Sort", "Filter"],
+      "answer": "Apply function to iterable",
+      "topic": "Functional Programming"
+    },
+    {
+      "question": "What does filter() do?",
+      "options": ["Filters elements", "Maps values", "Sorts list", "Deletes values"],
+      "answer": "Filters elements",
+      "topic": "Functional Programming"
+    },
+    {
+      "question": "What does open() do?",
+      "options": ["Opens file", "Closes file", "Deletes file", "Reads memory"],
+      "answer": "Opens file",
+      "topic": "File Handling"
+    },
+    {
+      "question": "Which mode opens file for writing?",
+      "options": ["r", "w", "a", "rw"],
+      "answer": "w",
+      "topic": "File Handling"
+    },
+    {
+      "question": "What does read() do?",
+      "options": ["Reads file content", "Writes file", "Deletes file", "Closes file"],
+      "answer": "Reads file content",
+      "topic": "File Handling"
+    },
+    {
+      "question": "What is a module?",
+      "options": ["Python file with functions", "Class", "Variable", "Loop"],
+      "answer": "Python file with functions",
+      "topic": "Modules"
+    },
+    {
+      "question": "Which keyword imports module?",
+      "options": ["import", "include", "use", "load"],
+      "answer": "import",
+      "topic": "Modules"
+    },
+    {
+      "question": "What is scope?",
+      "options": ["Variable accessibility", "Loop", "Condition", "Function"],
+      "answer": "Variable accessibility",
+      "topic": "Scope"
+    },
+    {
+      "question": "What is global keyword used for?",
+      "options": ["Access global variable", "Delete variable", "Create function", "Exit program"],
+      "answer": "Access global variable",
+      "topic": "Scope"
+    }
+  ],
+  "Advanced": [
+    {
+      "question": "What is Object-Oriented Programming?",
+      "options": ["Programming using objects", "Loop-based programming", "Functional programming", "None"],
+      "answer": "Programming using objects",
+      "topic": "OOP"
+    },
+    {
+      "question": "What is a class?",
+      "options": ["Blueprint for objects", "Function", "Variable", "Module"],
+      "answer": "Blueprint for objects",
+      "topic": "OOP"
+    },
+    {
+      "question": "What is an object?",
+      "options": ["Instance of class", "Blueprint", "Function", "Loop"],
+      "answer": "Instance of class",
+      "topic": "OOP"
+    },
+    {
+      "question": "What is inheritance?",
+      "options": ["One class acquiring another", "Function calling", "Loop nesting", "Error handling"],
+      "answer": "One class acquiring another",
+      "topic": "OOP"
+    },
+    {
+      "question": "What is polymorphism?",
+      "options": ["Same function different behavior", "Multiple inheritance", "Encapsulation", "Abstraction"],
+      "answer": "Same function different behavior",
+      "topic": "OOP"
+    },
+    {
+      "question": "What is encapsulation?",
+      "options": ["Binding data and methods", "Loop control", "Exception handling", "Inheritance"],
+      "answer": "Binding data and methods",
+      "topic": "OOP"
+    },
+    {
+      "question": "What is abstraction?",
+      "options": ["Hiding implementation details", "Hiding data", "Hiding variables", "Hiding loops"],
+      "answer": "Hiding implementation details",
+      "topic": "OOP"
+    },
+    {
+      "question": "What is __init__?",
+      "options": ["Constructor", "Destructor", "Variable", "Loop"],
+      "answer": "Constructor",
+      "topic": "OOP"
+    },
+    {
+      "question": "What is a decorator?",
+      "options": ["Function modifying another function", "Class", "Loop", "Module"],
+      "answer": "Function modifying another function",
+      "topic": "Decorators"
+    },
+    {
+      "question": "What is a generator?",
+      "options": ["Function using yield", "Normal function", "Class", "Loop"],
+      "answer": "Function using yield",
+      "topic": "Generators"
+    },
+
+    {
+      "question": "What does yield do?",
+      "options": ["Returns value one at a time", "Stops function", "Deletes data", "Restarts loop"],
+      "answer": "Returns value one at a time",
+      "topic": "Generators"
+    },
+    {
+      "question": "What is a context manager?",
+      "options": ["Manages resources", "Handles loops", "Handles errors", "Handles files"],
+      "answer": "Manages resources",
+      "topic": "Advanced Concepts"
+    },
+    {
+      "question": "What keyword is used with context manager?",
+      "options": ["with", "using", "open", "try"],
+      "answer": "with",
+      "topic": "Advanced Concepts"
+    },
+    {
+      "question": "What is multithreading?",
+      "options": ["Multiple threads execution", "Multiple processes", "Multiple functions", "Multiple loops"],
+      "answer": "Multiple threads execution",
+      "topic": "Concurrency"
+    },
+    {
+      "question": "What is multiprocessing?",
+      "options": ["Multiple processes", "Multiple threads", "Multiple loops", "Multiple functions"],
+      "answer": "Multiple processes",
+      "topic": "Concurrency"
+    },
+    {
+      "question": "What is GIL?",
+      "options": ["Global Interpreter Lock", "Global Input Loop", "General Index Logic", "None"],
+      "answer": "Global Interpreter Lock",
+      "topic": "Concurrency"
+    },
+    {
+      "question": "What is recursion?",
+      "options": ["Function calling itself", "Loop", "Class", "Condition"],
+      "answer": "Function calling itself",
+      "topic": "Functions"
+    },
+    {
+      "question": "What is memoization?",
+      "options": ["Caching results", "Loop optimization", "Sorting", "Searching"],
+      "answer": "Caching results",
+      "topic": "Optimization"
+    },
+    {
+      "question": "What is Big-O notation?",
+      "options": ["Time complexity", "Memory error", "Loop count", "Variable scope"],
+      "answer": "Time complexity",
+      "topic": "Performance"
+    },
+    {
+      "question": "What does __name__ == '__main__' mean?",
+      "options": ["Script execution entry", "Function call", "Class check", "Loop check"],
+      "answer": "Script execution entry",
+      "topic": "Advanced Python"
+    },
+
+    {
+      "question": "What is pickling?",
+      "options": ["Object serialization", "File deletion", "File compression", "Encryption"],
+      "answer": "Object serialization",
+      "topic": "Advanced Python"
+    },
+    {
+      "question": "What is lambda?",
+      "options": ["Anonymous function", "Named function", "Class", "Loop"],
+      "answer": "Anonymous function",
+      "topic": "Functional Programming"
+    },
+    {
+      "question": "What is map()?",
+      "options": ["Apply function", "Filter values", "Sort list", "Reduce values"],
+      "answer": "Apply function",
+      "topic": "Functional Programming"
+    },
+    {
+      "question": "What is reduce()?",
+      "options": ["Reduces iterable", "Sorts data", "Filters data", "Maps values"],
+      "answer": "Reduces iterable",
+      "topic": "Functional Programming"
+    },
+    {
+      "question": "What is virtual environment?",
+      "options": ["Isolated Python setup", "Cloud environment", "Virtual machine", "Server"],
+      "answer": "Isolated Python setup",
+      "topic": "Environment"
+    },
+    {
+      "question": "What is pip?",
+      "options": ["Package installer", "Compiler", "Debugger", "Interpreter"],
+      "answer": "Package installer",
+      "topic": "Environment"
+    },
+    {
+      "question": "What is REST API?",
+      "options": ["Web communication standard", "Database", "Library", "Protocol"],
+      "answer": "Web communication standard",
+      "topic": "Web"
+    },
+    {
+      "question": "What is JSON?",
+      "options": ["Data exchange format", "Database", "File system", "Library"],
+      "answer": "Data exchange format",
+      "topic": "Web"
+    },
+    {
+      "question": "What is serialization?",
+      "options": ["Convert object to byte stream", "Delete object", "Encrypt object", "Compress object"],
+      "answer": "Convert object to byte stream",
+      "topic": "Advanced Python"
+    }
+  ]
+}
+
   

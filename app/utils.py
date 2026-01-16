@@ -4,14 +4,44 @@ import pandas as pd
 # -----------------------------
 # Metrics computation
 # -----------------------------
-def compute_metrics(responses):
+def compute_metrics(results):
+    """
+    Computes performance metrics from quiz results.
+    Safely handles missing fields.
+    """
+
+    responses = results.get("responses", [])
+
+    # Handle empty quiz case
+    if not responses:
+        return {
+            "accuracy": 0,
+            "avg_time": 0,
+            "attempts": 0,
+            "topic_perf": {}
+        }
+
     df = pd.DataFrame(responses)
 
+    # ✅ SAFETY: ensure time_taken exists
+    if "time_taken" not in df.columns:
+        df["time_taken"] = 0
+
+    accuracy = results["correct"] / results["total_questions"]
+
+    avg_time = round(df["time_taken"].mean(), 2)
+
+    topic_perf = (
+        df.groupby("topic")["is_correct"]
+        .mean()
+        .to_dict()
+    )
+
     return {
-        "accuracy": round(df["correct"].mean(), 2),
-        "avg_time": round(df["time_taken"].mean(), 2),
+        "accuracy": round(accuracy, 2),
+        "avg_time": avg_time,
         "attempts": len(df),
-        "topic_perf": df.groupby("topic")["correct"].mean()
+        "topic_perf": topic_perf
     }
 
 # -----------------------------
@@ -43,3 +73,4 @@ def load_user_progress(username):
         return pd.read_csv(path)
 
     return None
+

@@ -7,6 +7,13 @@ from ai_engine import AIDecisionEngine
 from utils import compute_metrics
 import plotly.graph_objects as go
 
+if "last_level" not in st.session_state:
+    st.session_state.last_level = None
+
+if "last_num_questions" not in st.session_state:
+    st.session_state.last_num_questions = None
+
+
 def accuracy_gauge(value):
     fig = go.Figure(go.Indicator(
         mode="gauge+number",
@@ -52,6 +59,12 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
+
+
+
+
+username = st.text_input("Your Name")
+user_id = st.text_input("Username (unique)")
 st.markdown(
     f"""
     <div class="user-card">
@@ -62,10 +75,44 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+st.subheader("🎯 Select Difficulty Level")
+
+level = st.selectbox(
+    "Choose quiz level:",
+    ["Beginner", "Intermediate", "Advanced"]
+)
+st.subheader("🧮 Quiz Settings")
+
+num_questions = st.slider(
+    "Number of questions in quiz",
+    min_value=5,
+    max_value=30,
+    value=10,
+    step=5
+)
+
+st.session_state.num_questions = num_questions
+st.session_state.selected_level = level
+
+# Reset quiz if settings change
+if (
+    st.session_state.last_level != st.session_state.selected_level
+    or st.session_state.last_num_questions != st.session_state.num_questions
+):
+    st.session_state.quiz = None
+    st.session_state.started = False
+
+if "selected_level" not in st.session_state:
+    st.session_state.selected_level = "Beginner"
+
+if st.session_state.get("last_level") != st.session_state.selected_level:
+    st.session_state.started = False
+    st.session_state.quiz = None
+
+st.session_state.last_level = st.session_state.selected_level
+st.session_state.last_num_questions = st.session_state.num_questions
 
 
-username = st.text_input("Your Name")
-user_id = st.text_input("Username (unique)")
 
 if "quiz" not in st.session_state:
     st.session_state.quiz = None
@@ -74,8 +121,13 @@ if "show_results" not in st.session_state:
     st.session_state.show_results = False
 
 if st.button("Start NerdBud"):
-    st.session_state.quiz = QuizEngine(QUIZ_PATH)
-    st.session_state.show_results = False
+    st.session_state.quiz = QuizEngine(
+        quiz_path=QUIZ_PATH,
+        level=st.session_state.selected_level,
+        num_questions=st.session_state.num_questions
+    )
+    st.session_state.started = True
+
 
 quiz = st.session_state.quiz
 
@@ -139,7 +191,7 @@ if st.session_state.show_results and quiz:
             f"<div class='metric-card'><h4>Avg Time (sec)</h4><h2>{metrics['avg_time']}</h2></div>",
             unsafe_allow_html=True
         )
-
+ 
     with col3:
         st.markdown(
             f"<div class='metric-card'><h4>Decision</h4><h2>{ml}</h2></div>",
