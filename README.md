@@ -128,7 +128,7 @@ After running the command, open the browser link shown in the terminal.
 
 ### 2. Run in Jupyter Notebook
 ```bash
-Open **08_NerdBud_UI..ipynb** Run all the cells. after Running the last cell, following the below provided steps
+Open 08_NerdBud_UI..ipynb Run all the cells. after Running the last cell, following the below provided steps
 ```
 
 
