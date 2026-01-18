@@ -118,13 +118,19 @@ pip install -r requirements.txt
 
 ## ▶️ How to Run the Application
 
-### Run Streamlit App
+### 1. Run Streamlit App
 
 ```bash
 streamlit run app/streamlit_app.py
 ```
 
 After running the command, open the browser link shown in the terminal.
+
+### 2. Run in Jupyter Notebook
+
+```bash
+1. Open **08_NerdBud_UI..ipynb** Run all the cells. after Running the last cell, following the below provided steps
+```
 
 ---
 
